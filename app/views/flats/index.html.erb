@@ -1,0 +1,10 @@
+<nav>
+  <h1>Flats</h1>
+</nav>
+
+<% @flats.each do |flat| %>
+  <div class="flex align-items-center ms-3 border border-secondary">
+    <p><%= flat.name %></p>
+    <p><%= flat.address %></p>
+  </div>
+<% end %>
